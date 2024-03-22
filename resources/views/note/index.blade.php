@@ -1,5 +1,5 @@
 @php use Illuminate\Support\Str; @endphp
-<x-layout>
+<x-app-layout>
     <div class="note-container">
         <a href="{{ route('note.create') }}" class="new-note-btn">
             New Note
@@ -26,5 +26,7 @@
             @endforeach
 
         </div>
+
+        {{ $notes->links() }}
     </div>
-</x-layout>
+</x-app-layout>
