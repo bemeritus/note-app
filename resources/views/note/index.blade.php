@@ -1,6 +1,6 @@
 @php use Illuminate\Support\Str; @endphp
 <x-app-layout>
-    <div class="note-container">
+    <div class="note-container py-5">
         <a href="{{ route('note.create') }}" class="new-note-btn">
             New Note
         </a>
@@ -27,6 +27,8 @@
 
         </div>
 
-        {{ $notes->links() }}
+        <div class="p-6">
+            {{ $notes->links() }}
+        </div>
     </div>
 </x-app-layout>
